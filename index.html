@@ -5,6 +5,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Layout Create</title>
+     <link rel="icon" href="./images/logo.png" />
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;700&display=swap" rel="stylesheet">  
@@ -12,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
 </head>
 
 <body class="body">
@@ -21,17 +23,25 @@
             <img class="header_image" src="./images/logo.png" alt="logo"/>
         <h1 class="header-name">LayoutDeEjemplo</h1>
         </div>
-        <nav class="nav">  
+        <nav class="header_nav">  
         <ul class="nav_links">
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-            <li>Link4</li>
+            <li class="li">Link1</li>
+            <li class="li">Link2</li>
+            <li class="li link3">Link3</li>
+            <li class="li">Link4</li>
         </ul>
         </nav>
     </header>
 
+
 <main class="main">
+
+<div class="element">
+        <div class="element_box"></div>
+        <div class="element_box2"></div>
+</div>   
+
+<section class="lorems">
 <section>
     <div class="div1">
         <h2 class="div-title1"> Lorem ipsum dolor sit amet</h2>
@@ -48,6 +58,7 @@
         <h2 class="div-title3">Lorem ipsum dolor sit amet</h2>
         <p class="div-p3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque alias, rem temporibus minima veritatis assumenda eaque, ipsum aliquid tempora impedit nam labore laudantium, delectus. Quae iste perspiciatis voluptate maxime fuga.</p>
 </section>
+</section>
 
 </main>
 
@@ -56,16 +67,18 @@
     <div class="footer_div">
 
     <ul class="footer_list"> 
-        <li>Link1</li>
-        <li>Link2</li>
-        <li>Link3</li>
-        <li>Link4</li>
+        <li class="li">Link1</li>
+        <li class="li">Link2</li>
+        <li class="li link3">Link3</li>
+        <li class="li">Link4</li>
     </ul>
 
     <div class="footer_rrss">
-        <li class="fb">FB</li>
-        <li class="tw">TW</li>
-        <li class="g+">G+</li>
+        <div class="footer_rrss_box">
+        <img class="fb" src="./images/facebook.png" alt="fb-icon"></img>
+        <img class="tw" src="./images/gorjeo.png" alt="tw-icon"></img>
+        <img class="google" src="./images/google-mas.png" alt="google-icon"></img>
+        </div>
     </div>
 
     </div>

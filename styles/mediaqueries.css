@@ -29,6 +29,16 @@
         transition: 0.3s;
     }
 
+    .linkthree{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: white;
+    }
+
     .nav .nav_links {
         background-color: rgb(44, 81, 31);
         display: flex;
@@ -51,12 +61,13 @@
         justify-content: center;
         align-items: center;
         background-color: beige;
+        z-index: 1;
     }
 
     .element{
-        display: flex;
+        display: none;
         flex-direction: column;
-        justify-content:first baseline;
+        justify-content:baseline;
         align-items: center;
         margin-top: -2.8rem;
         margin-left: 51rem;
@@ -67,7 +78,7 @@
         opacity: 0;
         height: 0;
         overflow: hidden;
-        transition: all 0.3s ease;
+        /* transition: all 0.3s ease; */
     }
 
     .element_box {
@@ -111,32 +122,26 @@
         color: white;
     }
 
-    /* .element {
-        width: 30rem;
-        height: 100vh;
-        background-color: green;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        visibility: hidden;
-    } */
 
-    .link3:hover {
+    .linkthree:hover {
+        
         background-color: rgb(190, 153, 224);
             color: rgb(127, 218, 134);
             width: 80px;
             height: 30px;
-            transition: 0.3s;
+            transition: 0.3s; 
             align-items: center;
             cursor: pointer;
-            border-radius: 2%;
+            border-radius: 2%;   
+            
     }
 
-    .link3:hover ~ .element {
-        transform: translateZ(200px);
+    /* .link3:hover + .element {
+        display: block;
         opacity: 1;
         height: auto;
-    }
+
+    } */
 
     .footer_rrss{
         background-color: rgb(82, 123, 73);
@@ -161,6 +166,34 @@
 }
 
 @media all and (min-width: 500px) and (max-width: 1024px) {
+
+    .header_nav .nav_links {
+        background-color: rgb(44, 81, 31);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        list-style: none;
+        padding: 5px;
+        color: white;
+        height: 30px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .element{
+        display: none;
+    }
+
+    .linkthree{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: white;
+    }
+
 
     .footer_rrss{
         background-color: rgb(82, 123, 73);

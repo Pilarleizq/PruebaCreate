@@ -35,6 +35,15 @@
     margin: auto;
 }
 
+.ul {
+    display: none;
+}
+
+.linkthree {
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
 
 .main {
     padding: 10px;
@@ -67,6 +76,10 @@ border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
 
+.aside {
+    display: none;
+}
+
 .footer{
     background-color: rgba(144, 237, 113, 0.859);
     padding: 20px;
@@ -75,6 +88,8 @@ border-bottom: 1px solid black;
 
 .footer_div{
     align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_list{
